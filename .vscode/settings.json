@@ -1,0 +1,85 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell Sacred Geometry",
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.codeFormatting.preset": "OTBS",
+  "python.linting.enabled": false,
+  "python.linting.flake8Enabled": true,
+  "files.associations": {
+    "*.sacred": "json",
+    "*.cof": "yaml",
+    "*.scf": "markdown",
+    "*.ContextForge": "json"
+  },
+  "editor.rulers": [88],
+  "python.formatting.provider": "none",
+  "python.defaultInterpreterPath": "python",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "powershell.powerShellDefaultVersion": "7",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell Sacred Geometry": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "Import-Module '${workspaceFolder}/ContextForge/modules/SacredGeometry.psm1' -Force"
+      ]
+    }
+  },
+  "powershell.integratedConsole.showOnStartup": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.preview": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "φ": true,
+    "π": true,
+    "∞": true
+  },
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "sacred_geometry.patterns": {
+    "circle": true,
+    "triangle": true,
+    "spiral": true,
+    "golden_ratio": true,
+    "fractal": true
+  },
+  "ContextForge.cof_dimensions": 13,
+  "ContextForge.scf_phases": 8,
+  "ContextForge.python_first": true,
+  "emmet.includeLanguages": {
+    "sacred": "html",
+    "ContextForge": "html"
+  },
+  "extensions.recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    "ms-powershell.powershell",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.test-adapter-converter",
+    "ms-vscode.vscode-github-issue-notebooks",
+    "github.copilot",
+    "github.copilot-chat",
+    "pkief.material-icon-theme",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
