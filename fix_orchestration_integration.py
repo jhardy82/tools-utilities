@@ -143,7 +143,7 @@ def create_integration_test():
         TaskContext(
             task_id="integration-test-001",
             task_type="integration_validation",
-            priority=1.618  # Golden ratio priority
+            priority=PHI  # Golden ratio priority
         )
 
         # Test task assignment through orchestrator

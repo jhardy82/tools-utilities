@@ -15,6 +15,7 @@ Sacred Geometry Principles:
 Framework: Sacred Geometry → COF → SCF → Python-First → Personal Integration
 """
 
+import math
 import subprocess
 import sys
 import time
@@ -25,7 +26,7 @@ from typing import Any
 import psutil
 
 # Sacred Geometry Constants
-PHI = 1.618033988749895  # Golden Ratio
+PHI = (1 + math.sqrt(5)) / 2
 FIBONACCI = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
 
 

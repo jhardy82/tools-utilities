@@ -5,9 +5,10 @@ Phase 5: Critical Python Performance Resolution
 This script implements immediate fixes for Python test failures
 with Windows PowerShell compatibility (no Unicode emojis).
 
-φ = 1.618033988749895 (Golden Ratio Excellence)
+φ = PHI (Golden Ratio Excellence)
 """
 
+import math
 import json
 import sys
 import time
@@ -16,7 +17,7 @@ from functools import lru_cache
 from pathlib import Path
 
 # Sacred Geometry Constants
-PHI = 1.618033988749895
+PHI = (1 + math.sqrt(5)) / 2
 PHI_SQUARED = PHI**2
 PHI_CUBED = PHI**3
 GOLDEN_RATIO_TARGET = 1.0 / PHI

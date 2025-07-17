@@ -2,9 +2,10 @@
 """Sacred Geometry Optimization Action Plan Generator
 Creates specific optimization tasks based on Sacred Geometry analysis results
 
-Following φ = 1.618 prioritization methodology
+Following φ = PHI prioritization methodology
 """
 
+import math
 import json
 import time
 from dataclasses import dataclass
@@ -12,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 # Sacred Geometry Constants
-PHI = 1.618033988749
+PHI = (1 + math.sqrt(5)) / 2
 PHI_SQUARED = PHI ** 2
 PHI_CUBED = PHI ** 3
 
@@ -113,7 +114,7 @@ class SacredGeometryOptimizer:
                 description="Implement comprehensive testing strategy using Sacred Geometry principles to achieve system completeness",
                 implementation_steps=[
                     "🔍 Audit current test coverage across all systems",
-                    "📐 Apply Golden Ratio (φ = 1.618) to test-to-code ratios",
+                    "📐 Apply Golden Ratio (φ = PHI) to test-to-code ratios",
                     "🔺 Implement three-tier testing: Unit, Integration, End-to-End",
                     "🌀 Create progressive test enhancement spiral",
                     "♾️ Establish fractal testing patterns across scales",
@@ -226,7 +227,7 @@ class SacredGeometryOptimizer:
         if golden_ratio_score < 0.5:
             task = OptimizationTask(
                 id="GOLDEN_RATIO_001",
-                title="φ = 1.618 System Proportion Optimization",
+                title="φ = PHI System Proportion Optimization",
                 priority=PHI_CUBED,  # Highest priority for weakest pattern
                 pattern="Golden Ratio",
                 system="All Systems",
@@ -241,7 +242,7 @@ class SacredGeometryOptimizer:
                     "🔍 Validate improvements through mathematical analysis"
                 ],
                 success_criteria=[
-                    "System ratios align with φ = 1.618 (within 20% tolerance)",
+                    "System ratios align with φ = PHI (within 20% tolerance)",
                     "Golden Ratio optimization score > 0.8",
                     "Performance improvements measurable",
                     "Mathematical harmony demonstrated across systems"
